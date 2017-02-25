@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/andreysavelev/owl-icons#readme",
   "devDependencies": {
-    "autoprefixer": "^6.7.5",
     "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",
     "gulp-postcss": "^6.3.0",
