@@ -25,9 +25,9 @@ GULP.task('css', function() {
 GULP.task('serve', ['css'], function() {
 
     BROWSER_SYNC.init({
-        server: "./example"
+        server: './example'
     });
 
-    GULP.watch("src/*.css", ['css']);
-    GULP.watch("example/*.html").on('change', BROWSER_SYNC.reload);
+    GULP.watch('src/*.css', ['css']);
+    GULP.watch('example/*.html').on('change', BROWSER_SYNC.reload);
 });
