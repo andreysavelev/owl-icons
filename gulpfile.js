@@ -2,13 +2,11 @@ const GULP = require('gulp');
 const CSSO = require('postcss-CSSO');
 const POSTCSS = require('gulp-postcss');
 const CSSNEXT = require('postcss-cssnext');
-const AUTOPREFIXER = require('autoprefixer');
 const BROWSER_SYNC = require('browser-sync').create();
 
 GULP.task('css', function() {
 	let plugins = [
-	    CSSNEXT,
-	    AUTOPREFIXER({
+	    CSSNEXT({
 	    	browsers: ['> 1%'], 
 	    	cascade: false
 	    }),
