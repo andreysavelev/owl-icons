@@ -1,0 +1,31 @@
+{
+  "name": "owl-icons",
+  "version": "1.0.0",
+  "description": "Library of css icons. No fonts or svg or any other thirdparty, just vanilla css.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreysavelev/owl-icons.git"
+  },
+  "keywords": [
+    "icons",
+    "css-icons"
+  ],
+  "author": "Andrey Savelev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andreysavelev/owl-icons/issues"
+  },
+  "homepage": "https://github.com/andreysavelev/owl-icons#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.7.5",
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.3.0",
+    "postcss-cssnext": "^2.9.0",
+    "postcss-csso": "^1.1.2"
+  }
+}
