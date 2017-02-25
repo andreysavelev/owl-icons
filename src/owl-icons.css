@@ -1,0 +1,45 @@
+:root {
+	--basicWidth: 2em; 
+	--basicHeight: 2em;
+	--devBorders: 1px solid #000;
+	--halfLeftTranslate: translateX(-50%);
+}
+
+.oi {
+	position: relative;
+  	display: inline-block;
+  	width: var(--basicWidth);
+  	height: var(--basicHeight);
+  	border: var(--devBorders);
+}
+
+.oi:before,
+.oi:after {
+  	display: inline-block;
+  	background-color: currentColor;
+  	content: "\00a0";
+}
+
+
+/**********/
+/* Person */
+/**********/
+.oi-person {
+	text-align: center;
+}
+
+.oi-person:before {
+  	width: 50%;
+  	height: 50%;
+  	border-radius: 50%;
+}
+
+.oi-person:after {
+  	position: absolute;
+  	bottom: 0;
+  	left: 50%;
+  	transform: var(--halfLeftTranslate);
+  	width: 80%;
+  	height: 45%;
+  	border-radius: 50% 50% 0 0;
+}
