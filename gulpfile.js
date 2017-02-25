@@ -15,7 +15,7 @@ GULP.task('css', function() {
   
   	return GULP.src('src/*.css')
 		.pipe(POSTCSS(plugins))
-		.pipe(GULP.dest('css'))
+		.pipe(GULP.dest('./css'))
 		.pipe(BROWSER_SYNC.stream());
 });
 
@@ -23,9 +23,9 @@ GULP.task('css', function() {
 GULP.task('serve', ['css'], function() {
 
     BROWSER_SYNC.init({
-        server: './example'
+        server: './css'
     });
 
     GULP.watch('src/*.css', ['css']);
-    GULP.watch('example/*.html').on('change', BROWSER_SYNC.reload);
+    GULP.watch('css/examples/index.html').on('change', BROWSER_SYNC.reload);
 });
