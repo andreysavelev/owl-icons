@@ -4,6 +4,8 @@
   "description": "Library of css icons. No fonts or svg or any other thirdparty, just vanilla css.",
   "main": "index.js",
   "scripts": {
+    "serve": "node_modules/gulp/bin/bulp serve",
+    "scc-build": "node_modules/gulp/bin/bulp css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
