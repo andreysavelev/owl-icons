@@ -17,6 +17,7 @@
   	width: var(--basicWidth);
   	height: var(--basicHeight);
   	border: var(--devBorders);
+  	box-sizing: border-box;
 }
 
 .oi:before,
@@ -86,3 +87,32 @@
 	width: 15%;
 	height: 80%;
 }
+
+/************/
+/* Envelope */
+/************/
+.oi-envelope {
+	border: .2rem solid #FFFFFF;
+	background-color: currentColor;
+	overflow: hidden;
+}
+
+.oi-envelope:before,
+.oi-envelope:after {
+	position: absolute;
+	width: 80%;
+	height: 80%;
+	border: .2em solid #FFFFFF;
+	background-color: currentColor;
+	transform: rotate(-45deg);
+}
+
+.oi-envelope:before {
+	top: -50%;
+	z-index: 1;
+}
+
+.oi-envelope:after {
+	top: 50%;
+}
+
