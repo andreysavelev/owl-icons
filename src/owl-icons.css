@@ -6,6 +6,11 @@
 	--horizVertCenter: translate(-50%, -50%);
 }
 
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
 .oi {
 	position: relative;
   	display: inline-block;
