@@ -65,3 +65,24 @@
 .oi-minus:after {
 	display: none;
 }
+
+/********/
+/* Plus */
+/********/
+.oi-plus:before,
+.oi-plus:after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: var(--horizVertCenter);
+}
+
+.oi-plus:before {
+	width: 80%;
+	height: 15%;
+}
+
+.oi-plus:after {
+	width: 15%;
+	height: 80%;
+}
