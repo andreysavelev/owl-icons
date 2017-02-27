@@ -19,6 +19,10 @@
   	border: var(--devBorders);
   	box-sizing: border-box;
 }
+.oi:before,
+.oi:after {
+	box-sizing: border-box;
+}
 
 .oi:before,
 .oi:after {
@@ -67,23 +71,27 @@
 	display: none;
 }
 
-/********/
-/* Plus */
-/********/
+/****************/
+/* Plus & Close */
+/****************/
 .oi-plus:before,
-.oi-plus:after {
+.oi-plus:after,
+.oi-close:before,
+.oi-close:after {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: var(--horizVertCenter);
 }
 
-.oi-plus:before {
+.oi-plus:before,
+.oi-close:before {
 	width: 80%;
 	height: 15%;
 }
 
-.oi-plus:after {
+.oi-plus:after,
+.oi-close:after {
 	width: 15%;
 	height: 80%;
 }
@@ -100,19 +108,27 @@
 .oi-envelope:before,
 .oi-envelope:after {
 	position: absolute;
-	width: 80%;
-	height: 80%;
+	left: 50%;
+	width: 90%;
+	height: 100%;
 	border: .2em solid #FFFFFF;
 	background-color: currentColor;
-	transform: rotate(-45deg);
+	transform: var(--horizVertCenter) rotate(-45deg);
 }
 
 .oi-envelope:before {
-	top: -50%;
+	top: 0%;
 	z-index: 1;
 }
 
 .oi-envelope:after {
-	top: 50%;
+	top: 100%;
 }
 
+
+/*********/
+/* Close */
+/*********/
+.oi-close {
+	transform: rotate(-45deg);
+}
